@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "8a8863c8-e2fa-4c94-bfc2-3c5c029aef32",
+		"name": "HackersNews",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get top stories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:57746/api/hackers-news/top-stories?page=1&pageSize=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57746",
+					"path": [
+						"api",
+						"hackers-news",
+						"top-stories"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get story by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:57746/api/hackers-news/story?id=30060458",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57746",
+					"path": [
+						"api",
+						"hackers-news",
+						"story"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "30060458"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get new stories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:57746/api/hackers-news/new-stories?page=1&pageSize=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57746",
+					"path": [
+						"api",
+						"hackers-news",
+						"new-stories"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
